@@ -12,7 +12,7 @@ Helps visualize files locally in a Google Drive service account. Currently only 
   ```sh
   npm run dev
   ```
-- Copy `.json` key file (including surrounding brackets) into textbox at [localhost:3000](localhost:3000)
+- Copy `.json` key file (including surrounding brackets) into the textbox at [localhost:3000](localhost:3000) and click `Save`
   ```
   {  
     "key": 
@@ -23,5 +23,4 @@ Helps visualize files locally in a Google Drive service account. Currently only 
             "client_id": "YOUR CLIENT ID"
         } 
   }
-```
-
+  ```
