@@ -1,9 +1,7 @@
 import type {
   LinksFunction,
-  LoaderFunction,
   MetaFunction,
 } from "@remix-run/node";
-import { json } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -21,7 +19,7 @@ export const links: LinksFunction = () => {
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "Remix Notes",
+  title: "Google Drive UI",
   viewport: "width=device-width,initial-scale=1",
 });
 
