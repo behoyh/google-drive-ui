@@ -36,6 +36,20 @@ export async function getFiles(client) {
     });
 }
 
+export async function getStorageQuota(client) {
+    return new Promise((resolve, reject) => {
+        drive.about.get({
+            auth: client,
+            fields: "*"
+        }, (err, res) => {
+            if (err) {
+                return reject(err);
+            }
+            return resolve(res.data.storageQuota);
+        });
+    });
+}
+
 export async function deleteFile(client, fileId) {
 
     if (!fileId)
