@@ -1,5 +1,5 @@
 export class ServerConfig {
-static config: any = {};
+    static config: any = {};
 
     static setConfig(configString: string) {
         process.env.config = configString;

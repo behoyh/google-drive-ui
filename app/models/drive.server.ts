@@ -1,13 +1,13 @@
 import { ServerConfig } from "./config.server";
 
-const { google } = require("googleapis");
+import { google } from "googleapis";
 const drive = google.drive("v3");
 
 export async function auth() {
     console.log(ServerConfig.config);
     var jwtClient = new google.auth.JWT(
         ServerConfig.getConfig().key.client_email,
-        null,
+        undefined,
         ServerConfig.getConfig().key.private_key,
         ['https://www.googleapis.com/auth/drive']
     );

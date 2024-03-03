@@ -1,7 +1,14 @@
+import type { MetaFunction } from "@remix-run/node";
+import { Form, redirect } from "@remix-run/react";
+import React from "react";
+import { ServerConfig } from "../models/config.server";
 
-import { ServerConfig } from "~/models/config.server";
-import { redirect } from "@remix-run/server-runtime";
-import { Form } from "@remix-run/react";
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Google Drive UI" },
+    { name: "description", content: "Welcome to Remix!" },
+  ];
+};
 
 export async function action({ request }) {
   const body = await request.formData();
@@ -20,7 +27,7 @@ export default function Index() {
             <textarea name="config" rows={20} cols={100} style={{ borderColor: 'tomato', borderWidth: 'medium' }} >
             </textarea>
           </code></pre>
-          <br/>
+          <br />
           <button type="submit" name="_action" value="add" className="rounded bg-blue-500 py-2 px-4 text-white hover:bg-blue-600 focus:bg-blue-400">Save</button>
         </Form>
       </div>
