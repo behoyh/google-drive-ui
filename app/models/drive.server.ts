@@ -6,9 +6,9 @@ const drive = google.drive("v3");
 export async function auth() {
     console.log(ServerConfig.config);
     var jwtClient = new google.auth.JWT(
-        ServerConfig.getConfig().key.client_email,
+        ServerConfig.getConfig().client_email,
         undefined,
-        ServerConfig.getConfig().key.private_key,
+        ServerConfig.getConfig().private_key,
         ['https://www.googleapis.com/auth/drive']
     );
 

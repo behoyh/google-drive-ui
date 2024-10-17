@@ -14,13 +14,10 @@ Helps visualize files in a Google Drive service account locally. Currently only 
   ```
 - Copy **.json** key file (including surrounding brackets) into the textbox at [localhost:3000](localhost:3000) and click `Save`
   ```
-  {  
-    "key": 
         {
             "private_key_id": "YOUR PRIVATE KEY ID",
             "private_key": "YOUR PRIVATE KEY",
             "client_email": "YOUR CLIENT EMAIL",
             "client_id": "YOUR CLIENT ID"
         } 
-  }
   ```
