@@ -1,3 +1,6 @@
+# ARCHIVED: no longer under development. [Try this instead](https://www.spectralwebservices.com/blog/an-image-library-for-ghost/?ref=spectral-web-services-newsletter)
+
+
 # Google Drive Service Account UI
 
 Helps visualize files in a Google Drive service account locally. Currently only quota, thumbnail, name, and delete functions are supported. This project was built using [Remix](https://remix.run).
